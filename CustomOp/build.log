@@ -1,0 +1,43 @@
+using ASCEND_HOME_PATH: /home/developer/Ascend/cann-8.5.0-beta.1
+Preset CMake variables:
+
+  ASCEND_CANN_PACKAGE_PATH:PATH="/home/developer/Ascend/cann-8.5.0-beta.1"
+  ASCEND_COMPUTE_UNIT:STRING="ascend910"
+  ASCEND_PACK_SHARED_LIBRARY:BOOL="False"
+  ASCEND_PYTHON_EXECUTABLE:STRING="python3"
+  CMAKE_BUILD_TYPE:STRING="Release"
+  CMAKE_CROSS_PLATFORM_COMPILER:PATH="/usr/bin/aarch64-linux-gnu-g++"
+  CMAKE_INSTALL_PREFIX:PATH="/mnt/workspace/20260228_HuaweiShengteng/20260215_test01/reduce_max_v2/CustomOp/build_out"
+  ENABLE_BINARY_PACKAGE:BOOL="True"
+  ENABLE_CROSS_COMPILE:BOOL="False"
+  ENABLE_SOURCE_PACKAGE:BOOL="True"
+  ENABLE_TEST:BOOL="True"
+  vendor_name:STRING="customize"
+
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_CROSS_PLATFORM_COMPILER
+
+
+-- Build files have been written to: /mnt/workspace/20260228_HuaweiShengteng/20260215_test01/reduce_max_v2/CustomOp/build_out
+mv: cannot stat '/mnt/workspace/20260228_HuaweiShengteng/20260215_test01/reduce_max_v2/CustomOp/build_out/op_kernel/binary/ascend910/*.json': No such file or directory
+gmake[3]: *** [op_kernel/CMakeFiles/ascendc_bin_ascend910_gen_ops_config.dir/build.make:73: op_kernel/CMakeFiles/ascendc_bin_ascend910_gen_ops_config] Error 1
+gmake[2]: *** [CMakeFiles/Makefile2:264: op_kernel/CMakeFiles/ascendc_bin_ascend910_gen_ops_config.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:219: op_kernel/CMakeFiles/binary.dir/rule] Error 2
+gmake: *** [Makefile:182: binary] Error 2
+gmake: *** No rule to make target 'package'.  Stop.

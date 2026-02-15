@@ -1,0 +1,6 @@
+# Hashes of file build rules.
+75d17aa02990c5d64eae8b71971d0f7d op_kernel/CMakeFiles/ascendc_bin_ascend910_gen_ops_config
+bf4c7d65e6fa4e6d54739ebccfff51b3 op_kernel/CMakeFiles/npu_supported_ops
+bf4c7d65e6fa4e6d54739ebccfff51b3 op_kernel/CMakeFiles/ops_info_gen_ascend910
+d5b90333ed50aacb8d30907c878224b8 op_kernel/tbe/op_info_cfg/ai_core/ascend910/aic-ascend910-ops-info.json
+152b67366e8f2bde4d11871459f004ab op_kernel/tbe/op_info_cfg/ai_core/npu_supported_ops.json

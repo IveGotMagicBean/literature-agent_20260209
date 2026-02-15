@@ -1,0 +1,78 @@
+2026-02-15 11:22:30 (2375) - [INFO] Start to generate AI Core operator files. 
+2026-02-15 11:22:30 (2375) - [INFO] Start to parse the ir template:/mnt/workspace/20260228_HuaweiShengteng/20260215_test01/reduce_max_v2/ReduceCustom.json 
+2026-02-15 11:22:30 (2375) - [INFO] Start to parse the op: ReduceCustom 
+2026-02-15 11:22:30 (2375) - [INFO] Start to parse the input_desc: x 
+2026-02-15 11:22:30 (2375) - [INFO] Start to parse the output_desc: z 
+2026-02-15 11:22:30 (2375) - [WARNING] The "attr" value is invalid or no "attr" exists in the map. 
+2026-02-15 11:22:30 (2375) - [INFO] Start to check the type and format between the inputs/outputs in IR template. 
+2026-02-15 11:22:30 (2375) - [INFO] Start to generate a new project. 
+2026-02-15 11:22:30 (2375) - [WARNING] File config.cmake lack of ASCEND_FRAMEWORK_TYPE. Please check your config env. 
+2026-02-15 11:22:30 (2375) - [WARNING] File /mnt/workspace/20260228_HuaweiShengteng/20260215_test01/reduce_max_v2/CustomOp/cmake/config.cmake already exists and will be overwrite! 
+2026-02-15 11:22:30 (2375) - [INFO] File /mnt/workspace/20260228_HuaweiShengteng/20260215_test01/reduce_max_v2/CustomOp/cmake/config.cmake generated successfully. 
+2026-02-15 11:22:30 (2375) - [INFO] File /mnt/workspace/20260228_HuaweiShengteng/20260215_test01/reduce_max_v2/CustomOp/op_host/reduce_custom_tiling.h generated successfully. 
+2026-02-15 11:22:30 (2375) - [INFO] File /mnt/workspace/20260228_HuaweiShengteng/20260215_test01/reduce_max_v2/CustomOp/op_host/reduce_custom.cpp generated successfully. 
+2026-02-15 11:22:30 (2375) - [INFO] File /mnt/workspace/20260228_HuaweiShengteng/20260215_test01/reduce_max_v2/CustomOp/op_kernel/reduce_custom.cpp generated successfully. 
+2026-02-15 11:22:30 (2375) - [INFO] File /mnt/workspace/20260228_HuaweiShengteng/20260215_test01/reduce_max_v2/CustomOp/framework/tf_plugin/tensorflow_reduce_custom_plugin.cc generated successfully. 
+2026-02-15 11:22:30 (2375) - [INFO] File /mnt/workspace/20260228_HuaweiShengteng/20260215_test01/reduce_max_v2/CustomOp/framework/tf_plugin/CMakeLists.txt generated successfully. 
+2026-02-15 11:22:30 (2375) - [INFO] Generation completed. 
+using ASCEND_HOME_PATH: /home/developer/Ascend/cann-8.5.0-beta.1
+Preset CMake variables:
+
+  ASCEND_CANN_PACKAGE_PATH:PATH="/home/developer/Ascend/cann-8.5.0-beta.1"
+  ASCEND_COMPUTE_UNIT:STRING="ascend910"
+  ASCEND_PACK_SHARED_LIBRARY:BOOL="False"
+  ASCEND_PYTHON_EXECUTABLE:STRING="python3"
+  CMAKE_BUILD_TYPE:STRING="Release"
+  CMAKE_CROSS_PLATFORM_COMPILER:PATH="/usr/bin/aarch64-linux-gnu-g++"
+  CMAKE_INSTALL_PREFIX:PATH="/mnt/workspace/20260228_HuaweiShengteng/20260215_test01/reduce_max_v2/CustomOp/build_out"
+  ENABLE_BINARY_PACKAGE:BOOL="True"
+  ENABLE_CROSS_COMPILE:BOOL="False"
+  ENABLE_SOURCE_PACKAGE:BOOL="True"
+  ENABLE_TEST:BOOL="True"
+  vendor_name:STRING="customize"
+
+CMake Warning (dev) in CMakeLists.txt:
+  No project() command is present.  The top-level CMakeLists.txt file must
+  contain a literal, direct call to the project() command.  Add a line of
+  code such as
+
+    project(ProjectName)
+
+  near the top of the file, but after cmake_minimum_required().
+
+  CMake is pretending there is a "project(Project)" command on the first
+  line.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error at op_host/CMakeLists.txt:12 (add_modules_sources):
+  Unknown CMake command "add_modules_sources".
+
+
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.20)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring incomplete, errors occurred!
+See also "/mnt/workspace/20260228_HuaweiShengteng/20260215_test01/reduce_max_v2/CustomOp/build_out/CMakeFiles/CMakeOutput.log".
+gmake: Makefile: No such file or directory
+gmake: *** No rule to make target 'Makefile'.  Stop.
+gmake: Makefile: No such file or directory
+gmake: *** No rule to make target 'Makefile'.  Stop.
